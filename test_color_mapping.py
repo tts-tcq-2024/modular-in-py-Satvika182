@@ -9,7 +9,7 @@ def test_pair_to_number(major, minor, expected_pair_number):
     pair_number = get_pair_number_from_color(major, minor)
     assert pair_number == expected_pair_number, f"Expected {expected_pair_number}, got {pair_number}"
 
-if __name__ == '__main__':
+def tests():
     test_number_to_pair(4, 'White', 'Brown')
     test_number_to_pair(5, 'White', 'Slate')
     test_pair_to_number('Black', 'Orange', 12)
