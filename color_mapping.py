@@ -18,7 +18,3 @@ def get_pair_number_from_color(major, minor):
     if minor not in MINOR_COLORS:
         raise Exception('Minor index out of range')
     return MAJOR_COLORS.index(major) * len(MINOR_COLORS) + MINOR_COLORS.index(minor) + 1
-
-def generate_color_code_reference():
-    return [f'{pair}: {color_pair_to_string(*get_color_from_pair_number(pair))}' for pair in range(1, 26)]
-
