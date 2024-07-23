@@ -3,7 +3,7 @@ from generate_reference_manual import generate_color_code_reference
 
 def main():
      tests()
-     create_reference_manual()
+     generate_color_code_reference()
 
 
 if __name__ == '__main__':
