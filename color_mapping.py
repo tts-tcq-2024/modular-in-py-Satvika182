@@ -18,3 +18,4 @@ def get_pair_number_from_color(major, minor):
     if minor not in MINOR_COLORS:
         raise Exception('Minor index out of range')
     return MAJOR_COLORS.index(major) * len(MINOR_COLORS) + MINOR_COLORS.index(minor) + 1
+    
